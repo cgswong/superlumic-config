@@ -6,17 +6,112 @@
 - name: install developer brew applications
   homebrew: name={{item}} state=latest
   with_items:
-    - wget
-    - pwgen
-    - xmlstarlet
+    - asciidoc
+    - asciinema
+    - ascli
+    - bash
+    - bash-completion
+    - bats
+    - binutils
+    - cloud-watch
+    - cloudfoundry-cli
+    - cmake
+    - coreutils
+    - curl
+    - diffutils
+    - dnsmasq
+    - dnsperf
+    - dnstracer
+    - etcd
+    - ffmpeg --with-fac
+    - findutils --with-default-names
+    - fleetctl
+    - gawk
+    - ghostscript
+    - git-extras
+    - git-flow
+    - giter8
+    - github-release
+    - gnu-indent --with-default-names
+    - gnu-sed --with-default-names
+    - gnu-tar --with-default-names
+    - gnu-which --with-default-names
+    - gnupg2
+    - gnutls
+    - go
+    - godep
+    - gpatch
+    - grep --with-default-names
+    - gzip
     - htop
-    - watch
+    - htop
+    - icu4c
+    - jq
+    - less
+    - liquibase
+    - lynx
+    - make
+    - nmap
+    - node
+    - openssh
+    - packer
+    - pandoc
+    - pssh
+    - pv
+    - pwgen
+    - python
+    - python3
+    - rbenv
+    - rename
     - rsync
+    - rsync
+    - s3cmd
+    - sbt
+    - scala
+    - screen
+    - ssh-copy-id
+    - tcptrace
+    - terminal-notifier
+    - terraform
+    - tmux
+    - tree
+    - typesafe-activator
+    - unzip
+    - vault
+    - watch
+    - wdiff
+    - webkit2png
+    - wget
+    - wireshark
+    - zsh
 
 - name: install developer cask applications
   homebrew_cask: name={{item}} state=present
   with_items:
-    - phpstorm
-    - webstorm
+    - adium
+    - chefdk
+    - cyberduck
+    - evernote
+    - geppetto
+    - github
+    - handbrake
+    - handbrake-cli
+    - intellij-idea-ce
+    - jxplorer
+    - ngrok
+    - psequel
+    - qlcolorcode
+    - qlmarkdown
+    - qlstephen
+    - quicklook-json
+    - screenhero
     - sequel-pro
-    - java
+    - skype
+    - slack
+    - squidman
+    - utorrent
+    - vagrant
+    - vagrant-manager
+    - virtualbox
+    - wercker
+    - xmind

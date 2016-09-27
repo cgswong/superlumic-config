@@ -11,21 +11,17 @@
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
-        - istat-menus
-        - dropbox
-        - kaleidoscope
-        - hazel
-        - sonos
-        - tower
-        - superduper
-        - google-chrome
-        - keepingyouawake
         - atom
-        - bartender
-        - omnigraffle
-        - microsoft-office
-        - sketch
-        - adobe-illustrator-cc
+        - clipmenu
+        - google-chrome
+        - istat-menus
+        - kaleidoscope
+        - keepassx
+        - keepingyouawake
+        - launchcontrol
+        - recordit
+        - sketchup
+        - superduper
     - name: create ssh directory
       become: yes
       file:
@@ -62,9 +58,9 @@
     - profile-developer
 
   vars:
-    - computername: spectr
-    - git_user_name: Roderik van der Veer
-    - git_user_email: roderik@settlemint.io
+    - computername: cgwong-mac
+    - git_user_name: cgswong
+    - git_user_email: cgs.wong@gmail.com
     - php_version: 70
     - sublime_packages:
         - dest: "SideBarEnhancements"
