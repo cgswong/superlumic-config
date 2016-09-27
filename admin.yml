@@ -7,12 +7,9 @@
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
-        - spotify
-        - sketch
-        - imageoptim
         - imagealpha
-        - sketch-toolbox
-        - littleipsum1
+        - imageoptim
+        - sketchup
     - name: create ssh directory
       become: yes
       file:
@@ -44,9 +41,9 @@
     - profile-developer
 
   vars:
-    - computername: frontend
-    - git_user_name: Kunstmaan Admin (FE Laptop)
-    - git_user_email: frontend@kunstmaan.be
+    - computername: cgwong-mac
+    - git_user_name: cgswong Admin (FE Laptop)
+    - git_user_email: cgs.wong@gmail.com
     - sublime_packages:
         - dest: "SideBarEnhancements"
           repo: "https://github.com/titoBouzout/SideBarEnhancements"

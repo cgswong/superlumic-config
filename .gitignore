@@ -1,1 +1,4 @@
+# IntelliJ project folder
+*.idea
+# Mac trashcan
 .DS_Store
