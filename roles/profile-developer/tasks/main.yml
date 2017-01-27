@@ -3,33 +3,58 @@
 - name: tap caskroom/versions
   homebrew_tap: tap=caskroom/versions state=present
 
+- name: tap caskroom/cloudfoundry
+  homebrew_tap: tap=cloudfoundry/tap state=present
+
 - name: install developer brew applications
   homebrew: name={{item}} state=latest
   with_items:
+    - ansible
+    - ansible-cmdb
     - asciidoc
     - asciinema
-    - ascli
+    - autoconf
+    - automake
+    - awscli
     - bash
     - bash-completion
     - bats
+    - bfg
+    - bind
     - binutils
+    - cf-cli
     - cloud-watch
-    - cloudfoundry-cli
     - cmake
+    - corectl
     - coreutils
     - curl
     - diffutils
+    - direnv
+    - dirmngr
     - dnsmasq
     - dnsperf
     - dnstracer
+    - docbook
+    - elixir
+    - elm
+    - erlang
     - etcd
+    - fdupes
     - ffmpeg --with-fac
+    - figlet
+    - file-formula
     - findutils --with-default-names
     - fleetctl
+    - fontconfig
+    - freetype
     - gawk
+    - geoip
+    - gettext
     - ghostscript
+    - git
     - git-extras
     - git-flow
+    - git-secrets
     - giter8
     - github-release
     - gnu-indent --with-default-names
@@ -41,65 +66,106 @@
     - go
     - godep
     - gpatch
+    - gpg-agent
+    - grafana
+    - graphviz
     - grep --with-default-names
     - gzip
     - htop
-    - htop
+    - httpie
+    - httpstat
+    - hugo
     - icu4c
+    - jid
+    - jpeg
     - jq
+    - kibana
+    - kube-aws
+    - kubernetes-cli
+    - kubernetes-helm
+    - lame
     - less
     - liquibase
     - lynx
+    - m4
     - make
+    - mkdocs
+    - moreutils
+    - mycli
+    - neovim
     - nmap
     - node
+    - oniguruma
     - openssh
+    - openssl
     - packer
     - pandoc
+    - prometheus
     - pssh
     - pv
     - pwgen
+    - pyenv
+    - pyenv-virtualenv
+    - pyenv-virtualenvwrapper
+    - pypy3
     - python
     - python3
     - rbenv
+    - readline
     - rename
     - rsync
-    - rsync
+    - ruby-build
     - s3cmd
     - sbt
     - scala
     - screen
+    - slackcat
+    - socat
+    - sphinx-doc
+    - spiff
     - ssh-copy-id
+    - sshfs
     - tcptrace
     - terminal-notifier
     - terraform
     - tmux
     - tree
-    - typesafe-activator
     - unzip
     - vault
     - watch
     - wdiff
     - webkit2png
+    - webp
     - wget
     - wireshark
+    - xvid
+    - zlib
     - zsh
+    - zsh-completions
 
 - name: install developer cask applications
   homebrew_cask: name={{item}} state=present
   with_items:
     - adium
+    - atom
     - chefdk
-    - cyberduck
+    - clipmenu
+    - etcher
     - evernote
+    - flux
     - geppetto
     - github
+    - google-chrome
     - handbrake
     - handbrake-cli
+    - imageoptim
     - intellij-idea-ce
     - jxplorer
+    - launchcontrol
     - ngrok
+    - pgadmin4
     - psequel
+    - pycharm-ce
     - qlcolorcode
     - qlmarkdown
     - qlstephen
@@ -109,9 +175,12 @@
     - skype
     - slack
     - squidman
+    - torbrowser
+    - transmission
     - utorrent
     - vagrant
     - vagrant-manager
     - virtualbox
+    - virtualbox-extension-pack
     - wercker
     - xmind
